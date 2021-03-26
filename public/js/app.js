@@ -2,6 +2,7 @@
 
 const f=document.querySelector('form')
 const i=document.querySelector('input')
+const p=document.querySelector('#msg')
 const p1=document.querySelector('#msg1')
 const p2=document.querySelector('#msg2')
 const p3=document.querySelector('#msg3')
@@ -10,6 +11,7 @@ const p4=document.querySelector('#msg4')
 f.addEventListener('submit',(e)=>{
     e.preventDefault()
     const search=i.value
+    p.textContent="";
     p1.textContent="Loading....";
     p2.textContent="";
         p3.textContent="";
@@ -22,9 +24,11 @@ f.addEventListener('submit',(e)=>{
         p2.textContent="";
         p3.textContent="";
         p4.textContent="";
+        p.textContent="";
         }
         else{
             var s;
+            p.textContent="The weather search result is as follows : "
             s="Location : "+data.Location
             p1.textContent=s;
             s="Weather : "+data.Weather
