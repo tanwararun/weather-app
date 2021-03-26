@@ -30,7 +30,8 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Arun Tanwar'
+        name: 'Arun Tanwar',
+        text : 'Hi, I am Arun Tanwar and I have developed this website. Hope you are liking it.'
     })
 })
 
