@@ -15,7 +15,7 @@ f.addEventListener('submit',(e)=>{
         p3.textContent="";
         p4.textContent="";
    // console.log(search)
-    fetch('http://localhost:3000/weather?address='+search).then((res)=>{
+    fetch('/weather?address='+search).then((res)=>{
     res.json().then((data)=>{
         if(data.error){
         p1.textContent=data.error;
