@@ -7,12 +7,12 @@ const port=process.env.PORT || 3000
 
 const app = express()
 
-// Define paths for Express config
+
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
-// Setup handlebars engine and views location
+
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
@@ -31,7 +31,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
         name: 'Arun Tanwar',
-        text : 'Hi, I am Arun Tanwar and I have developed this website. Hope you are liking it.'
+        text : 'Dedicated to NIKITA : The Vampire. Sorry for that offensive joke :)'
     })
 })
 
