@@ -31,7 +31,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
         name: 'Arun Tanwar',
-        text : 'Dedicated to NIKITA : The Vampire. Sorry for that offensive joke :)'
+        text : 'Hope you are liking it. Contact : tanwararun5@gmail.com'
     })
 })
 
